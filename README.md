@@ -30,7 +30,7 @@ The subreddit post we're obtained via the reddit PushShift API. 10,000 submissio
 
 ### Key Findings
 
-- After vectorizing the text data using TF-IDF matrix factorization, the simple logistic regression model produced the highest accuracy score on the data. When explicit, self-identifying terms like 'depression' and 'suicide' were removed from the model, the test accuracy fell just slightly from 72% to 68%
+- After preprocessing the text using TF-IDF Vectorizer and a dimensionality reduction technique known as Singular Value Decomposition, the simple logistic regression model produced the highest accuracy score on the data. When explicit, self-identifying terms like 'depression' and 'suicide' were removed from the model, the test accuracy fell just slightly from 72% to 68%
 
 - The model with the second best performance was a Random Forest model which had a 72% accuracy on th test data (83% accuracy on the training data). RandomizedSearch was used to obtain the ideal hyperparameters. While the model performance was on par with that of the Logistic Regression model, the computational time was significantly higher.
 
